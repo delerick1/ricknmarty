@@ -1,0 +1,74 @@
+body{
+  background-color:#07252a;
+  color: aliceblue;
+}
+
+.parent{
+width: 75%;
+  background-color: #082c33;
+  position: relative;
+}
+.child2{
+position: absolute;
+top: 0;
+}
+.child2 h2{
+  background-color: #07252a;
+  width: 100%;
+  color: red;
+
+}
+.cont-p1{
+  width: 100%;
+  position: relative;
+}
+.banner img{
+  width: 100%;
+}
+
+.logobanner img{
+  position: absolute;
+  top: 6%;
+  left: 25%;
+  width: 50%;
+}
+.cont-p2{
+  width: 80%;
+  height: 70px;
+  background-color: black;
+  position: relative;
+  left: 10%;
+
+}
+.Search{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 9%;
+  top: 25%;
+
+}
+input{
+  font-size: 20px;
+  display:inline-block;
+  height: 60%;
+   width: 55%;
+ border: none;
+ outline: none;
+ padding: 0 25px;
+ border-radius: 25px 0 0 25px;
+
+}
+.button {
+  background-color: rgb(17, 255, 104);
+color: black;
+  border: none;
+  outline: none;
+  border: none;
+  border-radius:  0  25px 25px 0;
+  position: relative;
+  font-size: 20px;
+  padding: 0;
+   width: 20%;
+   height: 60%;
+}
