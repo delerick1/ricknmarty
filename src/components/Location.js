@@ -57,29 +57,33 @@ return(
         </div> 
     </div>
 
+    <div className="cont-p3">
     <div className="Rlocation">
-    <div>
     <h1><strong>Earth: ({locations.name})</strong></h1> 
 
         </div>
-        <div>
-        <h2>
+
+        <div className="s-cont">
+        
                <div>Type:<br/>{locations.type} </div>
                <div>Dimension: <br/>{locations.dimension}</div>
                <div>Population:<br/>{locations.residents?.length}</div>
 
-           </h2>
+           
         </div>
     </div>
-    <div className="Residents">
-        <div>
-        <ul>
+        <div className="cont-p3">
+    <div className="Cont-p4">
+
+
         {locations.residents?.map((resident) =>(
      <Residents url={resident} keys={resident}/>
 ))}
-</ul>
-        </div>
+        
+
+        
     </div>
+        </div>
     </>
 );
 };
