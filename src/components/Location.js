@@ -31,11 +31,22 @@ const Location = () => {
             console.log(locations)
 
         }
-}
+};
+const [page, setPage] = useState(2);
+
+const resiNumbers = 5;
+const lastIndex = resiNumbers * page;
+const firstIndex = lastIndex - resiNumbers;
+const residentpages = locations.residents?.slice(firstIndex, lastIndex);
+
+const lastPage = Math.ceil(locations.residents?.length / resiNumbers);
+
+const numbers = [];
+for (let i = 1; i <= lastPage; i++) {
+  numbers.push(i);
 
 
-console.log(locations.residents)
-
+};
 return(
 <>
 <div className="cont-p1">
@@ -76,13 +87,25 @@ return(
     <div className="Cont-p4">
 
 
-        {locations.residents?.map((resident) =>(
+        {residentpages?.map((resident) =>(
      <Residents url={resident} keys={resident}/>
 ))}
         
+       
 
         
     </div>
+    <button onClick={() => setPage(page - 1)} disabled={page === 1}>
+          Prev
+        </button>
+
+        {numbers.map((number) => (
+          <button onClick={() => setPage(number)}>{number}</button>
+        ))}
+
+        <button onClick={() => setPage(page + 1)} disabled={page === lastPage}>
+          Next
+        </button>
         </div>
     </>
 );

@@ -17,6 +17,7 @@ console.log(resident)
 
 
     return (
+      
       <div className="parent">
  <div className="child1">
  <img src={resident.image} alt=""/>
@@ -39,7 +40,7 @@ console.log(resident)
 </div> 
 
       </div>
-
+      
 
       );
     };
