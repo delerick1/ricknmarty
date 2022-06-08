@@ -89,3 +89,30 @@ text-align: center;
 display: flex;
 }
 
+.modalbx-cont{
+position: fixed; 
+top: 0; 
+left: 0;
+right: 0; 
+bottom:0;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgb(0, 0, 0, 0.3);
+}
+.modalbx {
+  background: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 9;
+}
+
+.overlay{
+  position: absolute;
+  top: 0; 
+left: 0;
+right: 0; 
+bottom:0;
+}
